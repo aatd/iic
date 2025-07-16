@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/iic/",
   build: {
-    outDir: "/docs/",
+    outDir: "./docs/",
   }
 })
