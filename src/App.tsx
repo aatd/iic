@@ -3,10 +3,22 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import FlashcardList from './views/FlashCardList'
+import { BrowserRouter, Route, Routes } from "react-router";
 
 function App() {
-  const [count, setCount] = useState(0)
+  return (
+    <BrowserRouter>
+      <Routes>
+          <Route path='/iic/' index element={<Index />} />
+          <Route path='/iic/rooms' element={<AugmentedRoom />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
 
+function Index () {
+  const [count, setCount] = useState(0)
+  
   return (
     <>
       <div>
@@ -34,6 +46,14 @@ function App() {
       </div>
     </>
   )
+}
+
+function AugmentedRoom () {
+  return(
+    <>
+      <div>Hello</div>
+    </>
+  );
 }
 
 export default App
