@@ -9,8 +9,8 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-          <Route path='/iic/' index element={<Index />} />
-          <Route path='/iic/rooms' element={<AugmentedRoom />} />
+          <Route path='/' index element={<Index />} />
+          <Route path='/rooms' element={<AugmentedRoom />} />
       </Routes>
     </HashRouter>
   )
