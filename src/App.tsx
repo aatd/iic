@@ -3,16 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import FlashcardList from './views/FlashCardList'
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
           <Route path='/iic/' index element={<Index />} />
           <Route path='/iic/rooms' element={<AugmentedRoom />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
